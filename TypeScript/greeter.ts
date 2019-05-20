@@ -1,29 +1,70 @@
 
-/** 
- * 类型注解
- * TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式。
-*/
-// function greeter(person: string) {
-//     return "Hello, " + person;
+// function greeter(person){
+//     return `hello, ${person}`;
 // }
 
-// let user = [0, 1, 2];//error TS2345: Argument of type 'number[]' is not assignable to parameter of type 'string'.
+// let user = 'Jane'
 
 // document.body.innerHTML = greeter(user);
 
+
 /** 
+ * 类型注解
+ */
+
+//  function greeter(person: string){
+//     return `hello, ${person}`;
+// }
+
+// // let user = 'Jane'
+// let user = ['Jane', 'Tony']
+
+// document.body.innerHTML = greeter(user);
+
+
+/**
  * 接口
- * 在TypeScript里，只要两个类型内部的结构兼容那么这两个类型就是兼容的。 这就允许我们在实现接口时候只要保证包含了接口要求的结构就可以，而不必明确地使用implements语句。
-*/
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+ */
+// interface Person {
+//     firstName: string;
+//     lastName: string;
+// }
 
-function greeter(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
+// function greeter(person: Person){
+//     return "Hello, " + person.firstName + " " + person.lastName;
+// }
 
-let user = { firstName: "Jane", lastName: "User" };
+// let user = { firstName: "Jane", lastName: "User" };
 
-document.body.innerHTML = greeter(user);
+// document.body.innerHTML = greeter(user);
+
+/**
+ * 类
+ */
+//在构造函数的参数上使用public等同于创建了同名的成员变量。
+// class Student {
+//     fullName: string;
+//     constructor(public firstName: string, public middleInitial: string, public lastName: string) {
+//         this.fullName = firstName + " " + middleInitial + " " + lastName;
+//     }
+// }
+
+// interface Person {
+//     firstName: string;
+//     lastName: string;
+// }
+
+// function greeter(person : Person) {
+//     return "Hello, " + person.firstName + " " + person.lastName;
+// }
+
+// let user = new Student("Jane", "M.", "User");
+// //Student {firstName: "Jane", middleInitial: "M.", lastName: "User", fullName: "Jane M. User"}
+// console.log(user)
+
+// document.body.innerHTML = greeter(user);
+
+let a
+a = 123
+a = 'hell'
+console.log(a)
