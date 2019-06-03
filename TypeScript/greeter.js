@@ -1,3 +1,4 @@
+"use strict";
 // function greeter(person){
 //     return `hello, ${person}`;
 // }
@@ -45,5 +46,7 @@
 // //Student {firstName: "Jane", middleInitial: "M.", lastName: "User", fullName: "Jane M. User"}
 // console.log(user)
 // document.body.innerHTML = greeter(user);
-var a = 'hello';
+var a;
+a = 123;
+a = 'helle22';
 console.log(a);
