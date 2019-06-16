@@ -1,0 +1,29 @@
+
+一、所需插件
+	1.vue-server-renderer ：用于vue的服务端渲染。
+	
+	2.webpack / webpack-cli
+	3.webpack-merge
+	4.webpack-node-externals : (作用待整理)
+	5.vue-server-renderer/server-plugin ：（作用待整理）
+	5.autoprefixer
+	6.babel-loader
+	7.babel-plugin-dynamic-import-webpack
+	8.@babel/core
+	9.@babel/preset-env
+	10.file-loader
+	11.html-webpack-plugin
+	12.postcss
+	13.postcss-loader
+	14.style-loader
+	15.url-loader
+	16.vue-loader
+	17.vue-style-loader
+	18.vue-template-compiler
+	19.vuex-router-sync
+	
+	
+	
+二、所需文件
+	1.index.template.html
+	为renderer提供一个页面模板。因为renderer只是生成HTML标记。（没有 html,head,body等）
