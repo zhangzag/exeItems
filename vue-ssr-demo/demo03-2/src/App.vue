@@ -1,20 +1,17 @@
 <template>
   <section id="app">
-    <p>服务端渲染（不含 vue-router 和 vuex） - vue ssr案例第二步</p>
-    <home />
-    <list />
+    <p>实现ssr服务端渲染增加 vue-router 和 vuex - vue ssr案例第三步</p>
+    <br>
+    <div>当前的页面路径： <span style="font-size: 20px; color:#f52811;">{{$router.currentRoute.path}}</span></div>
+    <br>
+    <router-link to="/">Home</router-link>
+    <router-link to="/list">List</router-link>
+    <router-view></router-view>
   </section>
 </template>
 
 <script>
-import home from './components/Home.vue'
-import list from './components/list.vue'
-
 export default {
-  name: 'App',
-  components: {
-    home,
-    list
-  }
+  name: 'App'
 }
 </script>

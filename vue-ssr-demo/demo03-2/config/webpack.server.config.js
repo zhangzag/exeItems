@@ -21,6 +21,7 @@ module.exports = merge(base, {
   entry: {
     server: path.resolve(__dirname, '../src/entry-server.js')
   },
+  // 使用 Node 风格导出模块(Node-style exports)
   output: {
     libraryTarget: 'commonjs2'
   },
