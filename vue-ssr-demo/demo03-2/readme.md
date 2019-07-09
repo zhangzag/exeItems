@@ -1,1 +1,1 @@
-## vue srr 案例第二步，实现服务端渲染（此步骤未实现 vue-router 和 vuex）
+## vue srr 案例第三步，实现服务端渲染（此步骤实现 vue-router 和 vuex）
