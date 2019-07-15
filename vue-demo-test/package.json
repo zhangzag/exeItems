@@ -1,8 +1,8 @@
 {
-  "name": "vue-scroll-demo",
-  "description": "",
+  "name": "vue-demo-test",
+  "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "zag",
+  "author": "zag <mrzhangzag@163.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
