@@ -1,0 +1,61 @@
+
+一、启动 mongoDB 服务
+	Mongod
+	
+二、链接服务端
+	mongo
+	
+三、查看存在的数据库
+	show dbs
+	
+四、查看数据库版本
+	db.version()
+	
+五、进入数据库 (如果该数据库不存在的话就是新建一个数据库，如果该库里面没有集合，默认是不显示出来的)
+	use 数据库名
+
+六、显示数据库中的集合（关系型数据库中叫做表）
+	show collections
+	
+七、显示当前所使用的数据库
+	db
+
+八、向集合里插入数据
+	db.集合名.insert({"name": "xiaoLi"})
+
+九、查找数据
+	1.查询所有数据 - db.集合名.find()
+	2.查询第一个文件数据 - db.集合名.findOne()
+	
+十、修改集合数据
+	db.集合名.update({"name": "xiaoLi"},{"name": "xiaoMing", "age": "15"})
+	
+十一、删除文件数据
+	db.集合名.remove({"name": "xiaoLi"})  - 删除条件是 {"name": "xiaoLi"} 的数据
+	
+十二、删除整个集合
+	db。集合名.drop()
+
+十三、删除整个数据库
+	db.dropDatabase() - 在删除时一定要先进入该数据库再删除。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -68,8 +68,9 @@
         :style="{height: verticalBarHeight + 'px', transform: `translateY(${varticalSlide}px)`}"></div>
     </div>
     <!-- 垂直滚动条 end -->
-    <div class="custom-scroll_bar is-horizontal">
-      <div 
+    <div class="custom-scroll_bar is-horizontal" @wheel.capture.stop="handlerWheel">
+      <div
+        @mousedown.stop='horizontalMove'
         class="custom-scroll_bar_block"
         :style="{width: horizontalBarWidth + 'px', transform: `translateY(${hotizontalSlide}px)`}"></div>
     </div>
@@ -123,6 +124,12 @@ export default {
       let ratio = (windowHeight/scrollMainEle.clientHeight).toFixed(2)
       // console.log(this.$refs.scrollConIn.scrollTop)
       this.varticalSlide = (this.$refs.scrollConIn.scrollTop) * ratio
+    },
+    horizontalMove (e) {
+      console.log(1, e)
+    },
+    handlerWheel (e) {
+      console.log(2, e)
     }
   }
 }
