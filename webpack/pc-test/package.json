@@ -37,7 +37,7 @@
     "transform-runtime": "^0.0.0",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.8",
-    "webpack": "^1.15.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^1.16.5",
     "webpack-merge": "^4.1.4"
   },
